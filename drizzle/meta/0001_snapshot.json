@@ -1,6 +1,6 @@
 {
-  "id": "34bef0d0-bfee-4009-b81f-38ba145cd0eb",
-  "prevId": "00000000-0000-0000-0000-000000000000",
+  "id": "5fa65000-87e8-4ce3-a87f-9156411beaa6",
+  "prevId": "34bef0d0-bfee-4009-b81f-38ba145cd0eb",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
@@ -28,6 +28,31 @@
         },
         "user_id": {
           "name": "user_id",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": true
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "policies": {},
+      "checkConstraints": {},
+      "isRLSEnabled": false
+    },
+    "public.demo": {
+      "name": "demo",
+      "schema": "",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text",
+          "primaryKey": true,
+          "notNull": true
+        },
+        "'demo": {
+          "name": "'demo",
           "type": "text",
           "primaryKey": false,
           "notNull": true
