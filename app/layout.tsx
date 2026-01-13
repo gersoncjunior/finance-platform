@@ -6,6 +6,7 @@ import { Query } from "@neondatabase/serverless";
 import { QueryProvider } from "@/providers/query-provider";
 import { Sheet } from "lucide-react";
 import { SheetProvider } from "@/providers/sheet-provider";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,6 +34,7 @@ export default function RootLayout({
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <QueryProvider>
             <SheetProvider />
+            <Toaster />
             {children}
           </QueryProvider>
         </body>
